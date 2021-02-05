@@ -1,0 +1,24 @@
+.category {
+  width: 87px;
+  height: 15px;
+  cursor: pointer;
+
+  &:link {
+    color: green;
+  }
+
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+
+  /* mouse over link */
+  a:hover {
+    cursor: pointer;
+  }
+
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+}
