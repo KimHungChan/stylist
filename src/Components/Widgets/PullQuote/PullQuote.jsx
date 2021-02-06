@@ -1,7 +1,7 @@
 import React from "react";
 
-const Paragraph = () => {
+const PullQuote = () => {
   return <div></div>;
 };
 
-export default Paragraph;
+export default PullQuote;

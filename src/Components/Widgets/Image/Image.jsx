@@ -1,7 +1,7 @@
 import React from "react";
 
-const Paragraph = () => {
+const Image = () => {
   return <div></div>;
 };
 
-export default Paragraph;
+export default Image;
