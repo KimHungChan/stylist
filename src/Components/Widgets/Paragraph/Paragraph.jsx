@@ -1,7 +1,5 @@
-import React from "react";
-
-const Paragraph = () => {
-  return <div></div>;
+const Paragraph = ({ paragraph }) => {
+  return <div dangerouslySetInnerHTML={{ __html: paragraph }}></div>;
 };
 
 export default Paragraph;

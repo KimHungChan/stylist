@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Tags.scss";
 
 const Tags = ({ tags }) => {
   return (
-    <section>
+    <section className="tags-section">
       <h2>Topics</h2>
       <ul>
         {tags.map((tag) => (

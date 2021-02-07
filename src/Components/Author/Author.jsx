@@ -4,7 +4,8 @@ import "./Author.scss";
 
 const Author = ({ authors }) => {
   return (
-    <aside>
+    <aside className="author-container">
+      Written by <br />
       {authors.map((author) => (
         <Link
           to={{

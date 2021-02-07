@@ -1,0 +1,26 @@
+.author-container {
+  padding-top: 1rem;
+  //   position: relative;
+  //   text-align: center;
+  width: 9.375rem;
+
+  @media (min-width: 34.375em) {
+    float: left;
+    margin-right: 2rem;
+    margin-top: 0.25rem;
+    text-align: left;
+    z-index: 1;
+    border-top: 2px solid #e2e2e2;
+  }
+
+  @media (min-width: 62.5em) {
+    margin-left: -4.687rem;
+    margin-right: 3rem;
+  }
+
+  @media (min-width: 75em) {
+    margin-left: calc(-50vw + 50% + 3rem);
+    margin-right: auto;
+    width: 20%;
+  }
+}

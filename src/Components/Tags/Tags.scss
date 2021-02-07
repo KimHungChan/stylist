@@ -1,0 +1,22 @@
+@import "../../Styles/colors.scss";
+
+.tags-section {
+  margin: 0 auto;
+  max-width: 56.25rem;
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+
+    li {
+      margin: 0 1rem 0 0;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      color: $medium-turquoise;
+    }
+  }
+}

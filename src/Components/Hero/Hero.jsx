@@ -5,8 +5,11 @@ const Hero = ({ heroImage }) => {
   console.log("🚀 ~ file: Hero.jsx ~ line 5 ~ Hero ~ heroImage", heroImage);
   const Image = styled.img`
     color: grey;
-    width: ${(props) => props.width || "20rem"};
-    //   height: 10rem;
+    // width: ${(props) => props.width || "20rem"};
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
     content: url(${(props) => props.heroImage.url || ""});
     @media (max-width: 600px) {
       content: url(${(props) => props.heroImage.sizes.portrait || ""});
