@@ -25,10 +25,8 @@ const WidgetSection = ({ widgets }) => {
 
   return (
     <div className="widget-container">
-      {widgets.map((widget) => (
-        <>
-          <RenderWidget widget={widget} />
-        </>
+      {widgets.map((widget, key) => (
+        <RenderWidget widget={widget} key={key} />
       ))}
     </div>
   );

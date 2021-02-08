@@ -21,7 +21,6 @@ const Home = () => {
   return pageData ? (
     <>
       <section className="page-section">
-        {console.log(pageData)}
         <Hero heroImage={pageData.acf.hero_image} />
         <header>
           <Category category={pageData.acf.category} />

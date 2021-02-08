@@ -3,7 +3,7 @@ import moment from "moment";
 
 const PublishDate = ({ date }) => {
   return (
-    <time datetime={date} title={date}>
+    <time dateTime={date} title={date}>
       {
         (moment.updateLocale("en", {
           relativeTime: {
