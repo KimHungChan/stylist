@@ -1,24 +1,38 @@
 .category {
-  width: 87px;
-  height: 15px;
   cursor: pointer;
+  z-index: 2;
+  font-family: "Hurme Geometric Sans 3", -apple-system, BlinkMacSystemFont,
+    Helvetica Neue, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  -webkit-letter-spacing: 0.08em;
+  -moz-letter-spacing: 0.08em;
+  -ms-letter-spacing: 0.08em;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: inline-block;
+  white-space: nowrap;
+  color: #1d1d1d;
+  font-size: 0.75rem;
+  padding: 0 1.25rem;
+  position: relative;
+
+  span {
+    &::after {
+      background-color: #3dd2be;
+      content: "";
+      height: 0.375rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0.063em;
+      z-index: -1;
+    }
+  }
 
   &:link {
-    color: green;
-  }
-
-  /* visited link */
-  a:visited {
-    color: green;
-  }
-
-  /* mouse over link */
-  a:hover {
-    cursor: pointer;
-  }
-
-  /* selected link */
-  a:active {
-    color: blue;
+    text-decoration: none;
   }
 }

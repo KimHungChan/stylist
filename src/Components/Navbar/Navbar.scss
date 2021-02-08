@@ -1,0 +1,48 @@
+@import "../../Styles/colors.scss";
+.navbar {
+  background-color: $navbar-color;
+
+  height: 1.5rem;
+
+  ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: #1d1d1d;
+    height: 1.5rem;
+    padding-top: 2px;
+
+    text-decoration: none;
+    font-size: 12px;
+    list-style: none;
+
+    li {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 660px) {
+    height: 3rem;
+    ul {
+      flex-wrap: wrap;
+    }
+  }
+}

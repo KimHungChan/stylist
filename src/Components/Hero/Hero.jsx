@@ -4,28 +4,23 @@ import styled from "styled-components";
 const Hero = ({ heroImage }) => {
   console.log("🚀 ~ file: Hero.jsx ~ line 5 ~ Hero ~ heroImage", heroImage);
   const Image = styled.img`
-    color: grey;
-    // width: ${(props) => props.width || "20rem"};
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
-    content: url(${(props) => props.heroImage.url || ""});
-    @media (max-width: 600px) {
-      content: url(${(props) => props.heroImage.sizes.portrait || ""});
+    height: auto;
+    background-image: url(${(props) => props.heroImage.sizes.landscape || ""});
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 66.6667%;
+    @media (min-width: 34.375rem) {
+      padding-top: 66.6667%;
+    }
+    @media (min-width: 50rem) {
+      background-image: url(${(props) =>
+        props.heroImage.sizes.letterbox || ""});
     }
   `;
 
-  return (
-    <div className="hero-container">
-      {/* <img src={heroImage.url} alt={heroImage.alt}/> */}
-      <Image heroImage={heroImage}></Image>
-      {/* <Image src={heroImage.sizes.landscape}></Image>
-            <Image src={heroImage.sizes.letterbox}></Image>
-            <Image src={heroImage.sizes.portrait}></Image>
-            <Image src={heroImage.sizes.square}></Image> */}
-    </div>
-  );
+  return <Image heroImage={heroImage}></Image>;
 };
 
 export default Hero;

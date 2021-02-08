@@ -10,7 +10,7 @@ const Category = ({ category }) => {
         pathname: category.slug,
       }}
     >
-      {category.name}
+      <span>{category.name}</span>
     </Link>
   ) : (
     <></>

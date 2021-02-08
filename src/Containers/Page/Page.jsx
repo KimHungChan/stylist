@@ -33,10 +33,11 @@ const Home = () => {
           author={<Author authors={pageData._embedded.author} />}
         />
         <WidgetSection widgets={pageData.acf.widgets} />
-        <footer>
+        <footer style={{ margin: "0 2rem" }}>
           <Tags tags={pageData.acf.tags} />
         </footer>
       </section>
+      <footer className="page-footer"></footer>
     </>
   ) : (
     <Spinner />

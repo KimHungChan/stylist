@@ -2,13 +2,9 @@
   display: flex;
   margin: 0 auto;
   max-width: 56.25rem;
+  margin-bottom: 3rem;
 
-  @media (max-width: 34.375em) {
-    flex-wrap: wrap;
-
-    aside {
-      margin: 0 auto;
-    }
+  @media (max-width: 550px) {
   }
 
   p {
@@ -17,5 +13,20 @@
     font-weight: 600;
     font-size: 1.25rem;
     max-width: 56.25rem;
+  }
+
+  @media (max-width: 930px) {
+    flex-wrap: wrap;
+
+    aside {
+      margin: 0 auto 2rem auto;
+      text-align: center;
+    }
+
+    p {
+      padding: 0 2rem;
+      max-width: 900px;
+      text-align: center;
+    }
   }
 }

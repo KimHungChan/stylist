@@ -1,8 +1,8 @@
+@import "../../Styles/colors.scss";
+
 .page-section {
   overflow-x: hidden;
   header {
-    // padding: 2rem 3rem;
-
     @media (min-width: 34.375em) {
       margin-bottom: 2rem;
       margin-left: auto;
@@ -24,4 +24,9 @@
     text-align: center;
     width: calc(100vw - 2rem);
   }
+}
+
+.page-footer {
+  height: 10rem;
+  background-color: $medium-turquoise;
 }
