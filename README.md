@@ -1,5 +1,9 @@
 # Getting Started with Stylist App
 
+## Quick View
+
+https://stylist-chan.netlify.app/
+
 ## Setup
 
 In the project directory, you should run:
