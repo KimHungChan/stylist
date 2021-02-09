@@ -5,7 +5,7 @@ import { setupServer } from "msw/node";
 import dummyResponse from "../responseData";
 
 const server = setupServer(
-  rest.get("http://www.mocky.io/v2/*", (req, res, ctx) => {
+  rest.get("https://www.mocky.io/v2/*", (req, res, ctx) => {
     return res(ctx.status(200), ctx.json(dummyResponse));
   }),
   rest.get("*", (req, res, ctx) => {
@@ -30,7 +30,7 @@ describe("Page data", () => {
   it("handles failure", () => {
     server.use(
       rest.get(
-        "http://www.mocky.io/v2/5dece3d333000052002b9037",
+        "https://www.mocky.io/v2/5dece3d333000052002b9037",
         (req, res, ctx) => {
           return res(ctx.status(400), ctx.json(dummyResponse));
         }
