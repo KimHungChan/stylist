@@ -2,6 +2,8 @@
 
 ## Quick View
 
+<img src="./src/resources/stylist.png">
+
 https://stylist-chan.netlify.app/
 
 ## Setup
