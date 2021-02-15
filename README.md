@@ -2,7 +2,7 @@
 
 ## Quick View
 
-<img src="./src/resources/stylist.png">
+<img src="./src/Resources/stylist.png">
 
 https://stylist-chan.netlify.app/
 
