@@ -36,4 +36,3 @@ I just added a few tests to show generally how I would go about testing. There's
 
 In terms of styling I just went with the original style but not to a pixel perfect level of detail. The page should be fairly responsive and readable for even the smallest of mobile screens. A hamburger menu would have helped with the navbar if I had more time. I also would have liked to have added a dark theme.
 
-**_Overall it was a very enjoyable exercise, hopefully you like it and thanks for taking it time to consider my application!_**
